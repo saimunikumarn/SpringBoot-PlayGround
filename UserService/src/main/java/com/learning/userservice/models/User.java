@@ -1,21 +1,23 @@
-package com.learning.userservice.dao;
+package com.learning.userservice.models;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 import java.io.Serializable;
 
-@Entity
-@JsonIgnoreProperties({"hibernateLazyInitializer"})
-public class UserDetails implements Serializable {
 
-    @Id
+public class User {
     private Integer uId;
     private String uName;
     private String address;
     private String contact;
+
+    public User(Integer uId, String uName, String address, String contact) {
+        this.uId = uId;
+        this.uName = uName;
+        this.address = address;
+        this.contact = contact;
+    }
 
     public int getuId() {
         return uId;

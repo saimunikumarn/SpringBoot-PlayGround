@@ -46,7 +46,7 @@ public class UserController {
 //    @RequestMapping(value = "/saveUser", method = RequestMethod.POST)
     public ResponseEntity<User> saveUser(@RequestBody User userDetails) {
         users.add(userDetails);
-        return new ResponseEntity<>(userService.getUser(userDetails.getUId(), users), HttpStatus.CREATED);
+        return new ResponseEntity<>(userService.getUser(userDetails.getuId(), users), HttpStatus.CREATED);
     }
 
     //to save multiple users at once
