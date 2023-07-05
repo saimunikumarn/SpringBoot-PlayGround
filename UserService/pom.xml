@@ -15,7 +15,7 @@
     <description>UserService</description>
     <properties>
         <java.version>19</java.version>
-        <spring-cloud.version>2022.0.3-SNAPSHOT</spring-cloud.version>
+        <spring-cloud.version>2022.0.3</spring-cloud.version>
     </properties>
     <dependencies>
         <dependency>
